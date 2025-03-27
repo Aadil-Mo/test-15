@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Coffee Beans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <img src="https://www.citypng.com/public/uploads/preview/brown-coffee-cup-logo-design-hd-png-701751694776791z8t9jck4mz.png" id="header-img" alt="Premium Coffee Beans Logo">
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#our-beans" class="nav-link">Our Beans</a></li>
+                <li><a href="#brewing-guide" class="nav-link">Brewing Guide</a></li>
+                <li><a href="#contact-us" class="nav-link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1>Experience the Perfect Brew</h1>
+        <p>Discover the rich flavors of our hand-selected, premium coffee beans.</p>
+        <button>Shop Now</button>
+    </section>
+
+    <section id="features">
+        <div class="feature-box">
+            <img src="https://media.istockphoto.com/id/1374171964/vector/ethically-sourced-ethical-source-stamp-emblem-log-sign-symbol-vector-graphic-design.jpg?s=612x612&w=0&k=20&c=o-OqP-NBf6mpaU020MqXW7WJ9xoQnL_0UFpCc7bu9kk=" alt="Ethical Sourcing">
+            <h3>Ethically Sourced</h3>
+            <p>We are committed to ethical and sustainable sourcing practices.</p>
+        </div>
+        <div class="feature-box">
+            <img src="https://www.haymancoffee.com/cdn/shop/articles/ground_coffee_best_ground_coffee_fresh_roasted_coffee_fresh_coffee_fresh_ground_coffee_2c4586d1-4e55-4dd4-98ae-2e0774e6a5e3.jpg?v=1531485202" alt="Freshly Roasted">
+            <h3>Freshly Roasted</h3>
+            <p>Our beans are roasted in small batches for optimal flavor.</p>
+        </div>
+        <div class="feature-box">
+            <img src="https://www.shutterstock.com/image-illustration/coffee-beans-aroma-icon-on-260nw-1224170926.jpg" alt="Exceptional Flavor">
+            <h3>Exceptional Flavor</h3>
+            <p>Enjoy the unique and complex taste profiles of our premium beans.</p>
+        </div>
+    </section>
+
+    <section id="video-section">
+        <h2>Watch Our Story</h2>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/YOUR_YOUTUBE_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="our-beans">
+        <h2>Explore Our Beans</h2>
+        <div class="bean-grid">
+            <div class="bean-card">
+                <img src="https://espressocoffeeguide.com/wp-content/uploads/2010/05/sidamo-coffee-beans.jpg" alt="Ethiopian Yirgacheffe Beans">
+                <h3>Ethiopian Yirgacheffe</h3>
+                <p>Bright, floral, and citrus notes.</p>
+                <p>Price: $25/lb</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="bean-card">
+                <img src="https://c8.alamy.com/comp/2RDF741/coffee-beans-coffee-farm-hacienda-venecia-zona-cafetera-colombia-2RDF741.jpg" alt="Colombian Supremo Beans">
+                <h3>Colombian Supremo</h3>
+                <p>Balanced, nutty, and smooth.</p>
+                <p>Price: $22/lb</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="bean-card">
+                <img src="https://pollards.com/wp-content/uploads/2014/01/Wholesale-Coffee-Beans-Brazil.jpg" alt="Brazilian Santos Beans">
+                <h3>Brazilian Santos</h3>
+                <p>Sweet, chocolatey, and nutty.</p>
+                <p>Price: $20/lb</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="brewing-guide">
+        <h2>Brewing Guide</h2>
+        <p>Learn how to make the perfect cup of coffee with our simple guide.</p>
+        <ul>
+            <li>Grind your beans fresh.</li>
+            <li>Use filtered water.</li>
+            <li>Experiment with different brewing methods.</li>
+        </ul>
+    </section>
+
+    <section id="contact-us">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest news and offers.</p>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            <input type="submit" id="submit" value="Subscribe">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Premium Coffee Beans</p>
+    </footer>
+
+    <script>
+        // Basic smooth scrolling for navigation links (optional)
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
